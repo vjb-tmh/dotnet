@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "TMH IT Projects - Home";
+}
+
+<div class="jumbotron">
+    <h1>TMH IT Projects</h1>
+    <p class="lead">This site hosts a list of TMH IT Projects.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>IT Projects</h2>
+        <p>
+            You can get a list of open TMH IT projects, create a new project, edit a project, assign projects as complete, or remove a project.
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Projects", "Index", "Projects")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>IT Roles</h2>
+        <p>Get a list of TMH IT roles including the vendor and manager assigned to each role.  Roles can be assigned to projects.</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Roles", "Index", "Roles")</p>
+    </div>
+</div>

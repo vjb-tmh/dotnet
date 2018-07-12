@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TMH_ID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Manager" Type="nvarchar(max)" />
+    <Property Name="Overall_LOE" Type="nvarchar(max)" />
+    <Property Name="Role1" Type="nvarchar(max)" />
+    <Property Name="Role1_LOE" Type="nvarchar(max)" />
+    <Property Name="Role2" Type="nvarchar(max)" />
+    <Property Name="Role2_LOE" Type="nvarchar(max)" />
+    <Property Name="Role3" Type="nvarchar(max)" />
+    <Property Name="Role3_LOE" Type="nvarchar(max)" />
+    <Property Name="Role4" Type="nvarchar(max)" />
+    <Property Name="Role4_LOE" Type="nvarchar(max)" />
+    <Property Name="Role5" Type="nvarchar(max)" />
+    <Property Name="Role5_LOE" Type="nvarchar(max)" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="Closed" Type="bit" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Role_Name" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Vendor" Type="nvarchar(max)" />
+    <Property Name="Manager" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="ProjectsModelStoreContainer">
+    <EntitySet Name="Projects" EntityType="Self.Projects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

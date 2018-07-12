@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TMH_ID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Manager" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Overall_LOE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role1_LOE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role2_LOE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role3_LOE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role4_LOE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role5_LOE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Closed" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Role_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Vendor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Manager" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ProjectsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Projects" EntityType="Self.Project" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectsModelStoreContainer" CdmEntityContainer="ProjectsEntities">
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="ProjectsModel.Project">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TMH_ID" ColumnName="TMH_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="Overall_LOE" ColumnName="Overall_LOE" />
+          <ScalarProperty Name="Role1" ColumnName="Role1" />
+          <ScalarProperty Name="Role1_LOE" ColumnName="Role1_LOE" />
+          <ScalarProperty Name="Role2" ColumnName="Role2" />
+          <ScalarProperty Name="Role2_LOE" ColumnName="Role2_LOE" />
+          <ScalarProperty Name="Role3" ColumnName="Role3" />
+          <ScalarProperty Name="Role3_LOE" ColumnName="Role3_LOE" />
+          <ScalarProperty Name="Role4" ColumnName="Role4" />
+          <ScalarProperty Name="Role4_LOE" ColumnName="Role4_LOE" />
+          <ScalarProperty Name="Role5" ColumnName="Role5" />
+          <ScalarProperty Name="Role5_LOE" ColumnName="Role5_LOE" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Closed" ColumnName="Closed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="ProjectsModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,201 @@
+﻿@model TMHProjects.Models.Project
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Project</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TMH_ID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TMH_ID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TMH_ID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Manager, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Manager, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Manager, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Overall_LOE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Overall_LOE, new List<SelectListItem>()
+                {
+                    new SelectListItem() { Text= "High", Value = "High" },
+                    new SelectListItem() { Text= "Medium", Value = "Medium"},
+                    new SelectListItem() { Text= "Low", Value = "Low", Selected = false }
+                }, "Select ...")
+                @Html.ValidationMessageFor(model => model.Overall_LOE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Notes, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Notes, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Notes, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role1, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role1, (SelectList)ViewBag.Role, string.Empty)
+                @Html.ValidationMessageFor(model => model.Role1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role1_LOE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role1_LOE, new List<SelectListItem>()
+                {
+                    new SelectListItem() { Text= "High", Value = "High" },
+                    new SelectListItem() { Text= "Medium", Value = "Medium"},
+                    new SelectListItem() { Text= "Low", Value = "Low", Selected = false }
+                }, "Select ...")
+                @Html.ValidationMessageFor(model => model.Role1_LOE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role2, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role2, (SelectList)ViewBag.Role,string.Empty)
+                @Html.ValidationMessageFor(model => model.Role2, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role2_LOE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role2_LOE, new List<SelectListItem>()
+                {
+                    new SelectListItem() { Text= "High", Value = "High" },
+                    new SelectListItem() { Text= "Medium", Value = "Medium"},
+                    new SelectListItem() { Text= "Low", Value = "Low", Selected = false }
+                }, "Select ...")
+                @Html.ValidationMessageFor(model => model.Role2_LOE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role3, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role3, (SelectList)ViewBag.Role,string.Empty)
+                @Html.ValidationMessageFor(model => model.Role3, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role3_LOE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role3_LOE, new List<SelectListItem>()
+                {
+                    new SelectListItem() { Text= "High", Value = "High" },
+                    new SelectListItem() { Text= "Medium", Value = "Medium"},
+                    new SelectListItem() { Text= "Low", Value = "Low", Selected = false }
+                }, "Select ...")
+                @Html.ValidationMessageFor(model => model.Role3_LOE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role4, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role4, (SelectList)ViewBag.Role, string.Empty)
+                @Html.ValidationMessageFor(model => model.Role4, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role4_LOE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role4_LOE, new List<SelectListItem>()
+                {
+                    new SelectListItem() { Text= "High", Value = "High" },
+                    new SelectListItem() { Text= "Medium", Value = "Medium"},
+                    new SelectListItem() { Text= "Low", Value = "Low", Selected = false }
+                }, "Select ...")
+                @Html.ValidationMessageFor(model => model.Role4_LOE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role5, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role5, (SelectList)ViewBag.Role,string.Empty)
+                @Html.ValidationMessageFor(model => model.Role5, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role5_LOE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role5_LOE, new List<SelectListItem>()
+                {
+                    new SelectListItem() { Text= "High", Value = "High" },
+                    new SelectListItem() { Text= "Medium", Value = "Medium"},
+                    new SelectListItem() { Text= "Low", Value = "Low", Selected = false }
+                }, "Select ...")
+                @Html.ValidationMessageFor(model => model.Role5_LOE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Closed, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.CheckBoxFor(model => model.Closed)
+                    @Html.ValidationMessageFor(model => model.Closed, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

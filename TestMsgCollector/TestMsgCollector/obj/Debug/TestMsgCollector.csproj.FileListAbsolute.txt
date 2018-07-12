@@ -1,0 +1,7 @@
+C:\Users\E080099\source\repos\TestMsgCollector\TestMsgCollector\bin\Debug\TestMsgCollector.exe.config
+C:\Users\E080099\source\repos\TestMsgCollector\TestMsgCollector\bin\Debug\TestMsgCollector.exe
+C:\Users\E080099\source\repos\TestMsgCollector\TestMsgCollector\bin\Debug\TestMsgCollector.pdb
+C:\Users\E080099\source\repos\TestMsgCollector\TestMsgCollector\obj\Debug\TestMsgCollector.csprojResolveAssemblyReference.cache
+C:\Users\E080099\source\repos\TestMsgCollector\TestMsgCollector\obj\Debug\TestMsgCollector.csproj.CoreCompileInputs.cache
+C:\Users\E080099\source\repos\TestMsgCollector\TestMsgCollector\obj\Debug\TestMsgCollector.exe
+C:\Users\E080099\source\repos\TestMsgCollector\TestMsgCollector\obj\Debug\TestMsgCollector.pdb

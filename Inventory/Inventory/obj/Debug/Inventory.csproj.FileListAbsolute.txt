@@ -1,0 +1,14 @@
+C:\Users\E080099\source\repos\Inventory\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\E080099\source\repos\Inventory\Inventory\bin\Debug\Inventory.exe
+C:\Users\E080099\source\repos\Inventory\Inventory\bin\Debug\Inventory.pdb
+C:\Users\E080099\source\repos\Inventory\Inventory\bin\Debug\CsvHelper.dll
+C:\Users\E080099\source\repos\Inventory\Inventory\bin\Debug\CsvHelper.xml
+C:\Users\E080099\source\repos\Inventory\Inventory\obj\Debug\Inventory.csprojResolveAssemblyReference.cache
+C:\Users\E080099\source\repos\Inventory\Inventory\obj\Debug\Inventory.Form1.resources
+C:\Users\E080099\source\repos\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+C:\Users\E080099\source\repos\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+C:\Users\E080099\source\repos\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\E080099\source\repos\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
+C:\Users\E080099\source\repos\Inventory\Inventory\obj\Debug\Inventory.exe
+C:\Users\E080099\source\repos\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\E080099\source\repos\Inventory\Inventory\bin\Debug\MaterialSkin.dll

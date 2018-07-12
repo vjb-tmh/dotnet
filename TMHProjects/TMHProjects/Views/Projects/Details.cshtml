@@ -1,0 +1,154 @@
+﻿@model TMHProjects.Models.Project
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Project</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TMH_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TMH_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Overall_LOE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Overall_LOE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role1_LOE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role1_LOE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role2_LOE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role2_LOE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role3_LOE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role3_LOE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role4_LOE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role4_LOE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role5_LOE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role5_LOE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Closed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Closed)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
